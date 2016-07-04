@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #AAA;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #AAA;
+  opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #AAA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #AAA;
+}
+
+html, body {
+  height: 100%;
+  background-color: $white;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #444;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 22px;
+  color: #999;
+}
+
+h3 {
+  font-size: 16.5px;
+  color: #5E5E5E;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: #666;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+button, input[type='submit'] {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.ctr-txt {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  button, input[type='submit'] {
+    font-size: 14px;
+    line-height: 1em;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+}

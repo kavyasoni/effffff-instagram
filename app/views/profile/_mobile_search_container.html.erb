@@ -1,0 +1,42 @@
+<div class="mobile-search-container">
+  <div class='msc-results-container'>
+    <% @searches.each do |query| %>
+      <div class='msc-results-wrapper'>
+        <div class='msc-result'>
+          <span class='msc-results-label'>Tags searched:</span>
+
+          <span class='msc-results-item'>
+            <% query.query_terms.each do |tag| %>
+              <span class="tag">
+                <%= tag %>
+              </span>
+            <% end %>
+          </span>
+        </div>
+
+        <div class='msc-result'>
+          <span class='msc-results-label'>Date of search:</span>
+
+          <span class='msc-results-item'>
+            <%= query.created_at.strftime('%b %d, %Y') %>
+          </span>
+        </div>
+
+          <% if query.complete? %>
+            <div class='msc-result'>
+              <%= link_to 'view my hashtags', results_path(query), class: 'msc-results-btn' %>
+            </div>
+          <% else %>
+            <div class='msc-result'>
+              <span class='msc-results-label'>Status</span>
+
+              <span class='msc-results-item'>
+                <span class="msc-result-icon icon-clock-o"></span>
+                &nbsp; We're busy looking for the top hashtags
+              </span>
+            </div>
+          <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

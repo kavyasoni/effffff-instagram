@@ -1,0 +1,554 @@
+.agot-benefits {
+  display: block;
+  min-height: 100vh;
+  min-height: 100%;
+  padding: 1.5em 0 0.5em;
+  text-align: center;
+}
+
+.agot-benefits-header {
+  color: $black;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.agot-benefits-list {
+  color: #5A5656;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25em;
+  font-weight: 300;
+  margin: 0 auto 1em;
+  padding: 0.5em;
+  width: 50%;
+}
+
+.agot-benefits-list--item {
+  display: block;
+  margin: 0.5em 0 0 10%;
+  text-align: left;
+  width: 100%;
+}
+
+.agot-logo {
+  vertical-align: middle;
+  width: 40px;
+}
+
+.agot-logo-word {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  margin-left: 0.75em;
+}
+
+.agot-logo-word a {
+  color: #212121;
+  text-decoration: none;
+}
+
+.agot-tags-examples-container {
+  display: block;
+  margin: 2em auto;
+  text-align: center;
+  width: 40%;
+}
+
+.agot-tags-examples-description {
+  display: block;
+  font-size: 1.5em;
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+}
+
+.agot-tags-examples-wrapper {
+  margin: 0 auto;
+  padding: 1em 0;
+  width: 80%;
+}
+
+.agot-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: $white;
+  padding-top: 4vh;
+  margin: 0.25em auto;
+  width: 60%;
+}
+
+.benefit-wrapper {
+  background-color: #FBFCE6;
+  border-bottom: 1px solid #E9E9CF;
+  border-top: 1px solid #E9E9CF;
+  padding: 1.5em 0 2.5em;
+  text-align: center;
+}
+
+.benefit-wrapper-alt {
+  padding: 1.5em 0 2.5em;
+  text-align: center;
+}
+
+.benefit-wrap {
+  width: 30%;
+}
+
+.benefit-wrap * {
+  display: block;
+}
+
+.benefit-wrap h3 {
+  margin: 1.5em 0 0.5em;
+}
+
+.benefits-row {
+  align-items: flex-start;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 3em;
+  max-width: 1080px;
+  width: 96%;
+}
+
+.benefits-section {
+  margin: 4em auto 0;
+}
+
+.benefits-wrapper {
+  background-color: #FBFCE6;
+  border-bottom: 1px solid #E9E9CF;
+  border-top: 1px solid #E9E9CF;
+  display: block;
+  min-height: 75vh;
+  padding: 1.5em 0 0;
+  text-align: center;
+}
+
+.bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.breadcrumb-link {
+  background-color: $borderGray;
+  border: 1px solid $darkGray;
+  border-radius: 5px;
+  color: $naturalBlack;
+  padding: 5px 10px;
+  &:hover {
+    background-color: $darkGray;
+  }
+}
+
+a.breadcrumb-link {
+  color: $naturalBlack;
+}
+
+.breadcrumbs-container {
+  padding: 0.5em;
+}
+
+.cut-short {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.disabled-hero-cta {
+  color: $white;
+  background-color: #9BAEBC;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  width: 45%;
+  max-width: 160px;
+  margin-right: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.faq-answer {
+  line-height: 1.75em;
+  margin-left: 43px;
+  margin-top: 0.5em;
+}
+
+.faq-dot {
+  background-color: #2faafc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  margin-right: 24px;
+  vertical-align: middle;
+  width: 10px;
+}
+
+.faq-header {
+  display: inline-block;
+  font-size: 1.65em;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.faq-item {
+  margin: 1.5em 0 1em;
+}
+
+.hero-container {
+  margin: 4vh auto;
+}
+
+.hero-cta-wrapper {
+  margin-top: 40px;
+}
+
+.hero-cta-wrapper a {
+  text-decoration: none;
+}
+
+.hero-list {
+  margin: 3.5em auto;
+  width: 60%;
+}
+
+.hero-list p {
+  color: $white;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  text-align: justify;
+}
+
+.hero-screenshot {
+  margin: 0 auto;
+  width: 80vh!important;
+}
+
+.hero-wrapper {
+  background: image-url('hero.jpg');
+  background-size: cover;
+  display: block;
+  margin-top: 80px;
+  min-height: 70vh;
+  text-align: center;
+  width: 100%;
+}
+
+.hosting-form {
+  padding-top: 0.5em;
+}
+
+.hosting-input {
+  border: 2px solid #DDD;
+  border-radius: 3px;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  margin: 0.5em auto;
+  min-width: 40%;
+  padding: 0.5em;
+}
+
+.main-container {
+  margin: 90px auto 0;
+  width: 80%;
+}
+
+.money-cta {
+  background-color: #8BB750;
+  border: none;
+  border-radius: 2px;
+  color: $white;
+  margin-top: 0.75em;
+  max-width: 200px;
+  min-width: 120px;
+  padding: 10px;
+  transition: all 0.2s ease 0s;
+}
+
+.money-cta:hover {
+  background: #8BA850;
+  cursor: pointer;
+}
+
+.money-making-wrapper {
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+.paragraph {
+  font-size: 1.25em;
+  margin: 1em auto;
+  text-align: justify;
+  width: 70%;
+}
+
+.paragraph a {
+  color: $mainBlue;
+  text-decoration: none;
+}
+
+.paragraph a:hover {
+  text-decoration: underline;
+}
+
+.price {
+  color: #8BB750;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.price-period {
+  color: #888;
+  font-size: 0.25em;
+  padding-bottom: 0.25em;
+  padding-left: 0.25em;
+  vertical-align: middle;
+}
+
+.processing-container {
+  min-height: 500px;
+}
+
+.processing-header {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.processing-text {
+  font-size: 1.25em;
+  margin: 0 auto;
+  line-height: 1.35em;
+  width: 70%;
+}
+
+.screenshot {
+  width: 50vw;
+}
+
+.screenshot-wrapper {
+  margin: 0 auto 2em;
+  padding-top: 1em;
+  width: 50%;
+}
+
+.screenshot-wrapper > img {
+  border: 1px solid #EEE;
+  padding: 0.5em;
+  width: 50vw;
+}
+
+.agot-tags-header-first {
+  font-size: 1.6em;
+}
+
+.section-descriptor-first {
+  color: #8D888D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
+  font-weight: 300;
+  margin: 0.25em 0;
+}
+
+.section-descriptor {
+  color: #8D888D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0.75em auto;
+  width: 100%;
+}
+
+.subheader {
+  color: #333;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+
+.tag {
+  border: 1px solid $borderGray;
+  box-shadow: none;
+}
+
+.tag-inline {
+  vertical-align: middle!important;
+  height: auto!important;
+  padding: 2px 4px!important;
+}
+
+.will-email-img-wrapper {
+  margin: 0 auto 1.5em;
+  width: 100px;
+}
+
+.za-flag {
+  background-image: image-url("za-flag.png");
+  background-size: cover;
+  display: inline-block;
+  height: 10px;
+  width: 16px;
+  margin: 0 3px;
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  .agot-benefits {
+    margin: 0.5em auto;
+    width: 90%;
+  }
+
+  .agot-benefits-header {
+    font-size: 1.75em;
+    font-weight: 400;
+    margin: 0 auto 0.75em;
+    width: 100%;
+  }
+
+  .agot-benefits-list {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .agot-benefits-list--item {
+    margin: 0.5em 0 0 0;
+  }
+
+  .agot-tags-examples-container {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .agot-tags-examples-description {
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .agot-tags-examples-wrapper {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+
+  .agot-title {
+    font-size: 2.5em;
+    line-height: 0.9em;
+    margin: 0 auto 0.5em;
+    padding-top: 0;
+    width: 90%;
+  }
+
+  .benefit-wrap {
+    margin: 2.5em auto 0;
+    width: 90%;
+  }
+
+  .benefit-wrap h3 {
+    margin: 0.75em 0;
+  }
+
+  .benefits-paragraph {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .benefits-row {
+    display: block;
+  }
+
+  .benefits-section {
+    margin-top: 2em;
+  }
+
+  .benefit-wrapper {
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+  }
+
+  .cut-short {
+    width: 80%;
+  }
+
+  .faq-answer {
+    margin-left: 19px;
+  }
+
+  .faq-dot {
+    height: 8px;
+    margin-right: 8px;
+    width: 8px;
+  }
+
+  .faq-header {
+    font-size: 1.25em;
+  }
+
+  .hero-container {
+    display: block;
+  }
+
+  .hero-image-wrapper img {
+    max-width: 100%;
+  }
+
+  .hero-list {
+    margin: 2em auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .hero-list p {
+    font-size: 1em;
+    margin-bottom: 0.25em;
+  }
+
+  .hero-screenshot {
+    margin: 0 auto;
+    width: 90%!important;
+  }
+
+  .hero-wrapper {
+    display: block;
+    margin: 0 auto;
+    min-height: 1em;
+    text-align: center;
+    width: 100%;
+  }
+
+  .main-container {
+    margin: 2em auto 1em;
+    width: 90%;
+  }
+
+  .paragraph {
+    font-size: 1em;
+    width: 90%;
+  }
+
+  .section-descriptor {
+    font-size: 0.9em;
+    margin: 1em auto;
+  }
+
+  .screenshot-wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .screenshot-wrapper > img {
+    width: 90vw;
+  }
+
+  .subheader {
+    font-size: 1.2em;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .tag {
+    vertical-align: middle;
+  }
+}

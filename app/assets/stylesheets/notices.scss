@@ -1,0 +1,11 @@
+.alert-notice {
+  background-color: $successGreen;
+  color: $naturalBlack;
+  padding: 10px;
+}
+
+.alert-warning {
+  background-color: $inputErrorColor;
+  color: $naturalBlack;
+  padding: 10px;
+}

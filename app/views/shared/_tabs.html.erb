@@ -1,0 +1,21 @@
+<div class="tabs is-boxed">
+  <ul>
+    <li class= "<%= current_page?(new_query_path) ? 'is-active' : '' %>">
+      <%= link_to new_query_path do %>
+        <i class="fa fa-image"></i> New search
+      <% end %>
+    </li>
+
+    <li class= "<%= current_page?(search_history_path) ? 'is-active' : '' %>">
+      <%= link_to search_history_path do %>
+        <i class="fa fa-music"></i> Previous searches
+      <% end %>
+    </li>
+
+    <li class= "<%= current_page?(faq_path) ? 'is-active' : '' %>">
+      <%= link_to faq_path do %>
+        <i class="fa fa-film"></i> Help
+      <% end %>
+    </li>
+  </ul>
+</div>

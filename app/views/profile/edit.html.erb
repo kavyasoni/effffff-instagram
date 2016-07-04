@@ -1,0 +1,44 @@
+<div class='main-container'>
+  <%= render partial: 'shared/notices' %>
+  <%= render partial: 'shared/breadcrumbs' %>
+
+  <div class='profile-container'>
+    <h1 class='profile-header'>
+      Manage your profile
+    </h1>
+
+    <div class='profile-description'>
+      You can make changes to your profile at any time.
+    </div>
+
+    <%= form_for @current_user, url: update_profile_path, method: :patch do |f| %>
+      <div class='profile-mngmt-container'>
+        <h2 class='profile-mngmt-header'>
+          What's your name?
+        </h2>
+
+        <div>
+          <%= f.text_field :full_name, class: 'profile-mngmt-email-field' %>
+        </div>
+      </div>
+
+      <div class='profile-mngmt-container'>
+        <h2 class='profile-mngmt-header'>
+          What's your email address?
+        </h2>
+
+        <div>
+          <%= f.email_field :email, class: 'profile-mngmt-email-field' %>
+        </div>
+
+        <div class='profile-mngmt-notice'>
+          * You trusted us enough to sign up, we don't want to break that trust. We will only email you as part of your ongoing use of A Game of Tags.
+        </div>
+      </div>
+
+      <div class='profile-mngmt-btn-wrapper'>
+        <%= f.submit 'UPDATE PROFILE', class: 'profile-mngmt-email-btn' %>
+      </div>
+    <% end %>
+  </div>
+</div>

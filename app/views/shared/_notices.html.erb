@@ -1,0 +1,13 @@
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>">
+    <% if key == 'notice' %>
+      <i class='flash-icon icon-check'></i>
+    <% end %>
+
+    <% if key == 'warning' %>
+      <i class='flash-icon icon-close'></i>
+    <% end %>
+
+    <%= value %>
+  </div>
+<% end %>

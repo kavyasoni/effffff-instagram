@@ -1,0 +1,40 @@
+<%= form_tag '/hashtag-query', method: :get do %>
+  <div class='ht-form-container'>
+    <div>
+      <div class="search-field-wrapper">
+        <%= label_tag '', 'First hashtag', class: 'input-field-title' %>
+        <%= text_field_tag 'hashtag_one', '', class: 'tag-search-input' %>
+      </div>
+
+      <div class="search-field-wrapper">
+        <%= label_tag '', 'Second hashtag', class: 'input-field-title' %>
+        <%= text_field_tag 'hashtag_two', '', class: 'tag-search-input' %>
+      </div>
+
+      <div class="search-field-wrapper">
+        <%= label_tag '', 'Third hashtag', class: 'input-field-title' %>
+        <%= text_field_tag 'hashtag_three', '', class: 'tag-search-input' %>
+      </div>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <%= submit_tag 'SEARCH', class: 'hero-cta ht-search-btn', id: 'search-btn' %>
+      </div>
+    </div>
+  </div>
+
+  <div class='ht-explanations-container'>
+    <p class='ht-explanation-p'>
+      Our filter needs 3 of your hashtags to search the Instagram API for the best results. For example, if the photo you'd like to upload to Instagram is a photo of a cake, your base hashtags could possibly be <span class='tag tag-inline'>instadessert</span>, <span class='tag tag-inline'>cakeboss</span>, and <span class='tag tag-inline'>cakemasters</span>.
+    </p>
+
+    <p class='ht-explanation-p'>
+      Our filter will then find a collection of the most relevant hashtags for you. The reason you need to provide 3 hashtags is so that our filter doesn't return results irrelevant to your search. A hashtag like <span class='tag tag-inline'>insects</span> won't be useful when your photo is of a slice of birthday cake.
+    </p>
+
+    <p class='ht-explanation-p'>
+      You can add the <italic>hash</italic> symbol if you want, although it isn't required. <span class='tag tag-inline'>instadessert</span> will work just as well as <span class='tag tag-inline'>#instadessert</span>.
+    </p>
+  </div>
+<% end %>

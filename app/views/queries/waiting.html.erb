@@ -1,0 +1,38 @@
+<div class='main-container'>
+  <div class='processing-container'>
+    <h1 class='processing-header ctr-txt'>
+      Alright, we're on it!
+    </h1>
+
+    <div class='processing-text ctr-txt'>
+      It's going to take us a while to crunch these numbers. Why don't you try doing some jumping jacks in the meantime? Fitness is very important and you should look after your health!
+    </div>
+
+    <div class='usr-mngmt-container'>
+      <% if @current_user.email? %>
+        <h2 class='user-mngmt-header ctr-txt'>
+          We'll email you when your results are ready.
+        </h2>
+
+        <div class='will-email-img-wrapper'>
+          <%= image_tag('insights-feature-reviews.png') %>
+        </div>
+      <% else %>
+        <h2 class='user-mngmt-header ctr-txt'>
+          Would you like us to notify you when your hashtags are ready?
+        </h2>
+
+        <div class='usr-mngmt-form'>
+          <%= form_for @current_user, url: update_email_prefs_path, method: :patch do |f| %>
+            <%= f.email_field :email, class: 'user-mngmt-email-field' %>
+            <%= f.submit 'notify me', class: 'user-mngmt-email-btn' %>
+          <% end %>
+        </div>
+
+        <div class='usr-mngmt-notice ctr-txt'>
+          * You've already trusted us enough to sign up. We will only email you as part of your ongoing use of A Game of Tags. We hate spam as much as you do.
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

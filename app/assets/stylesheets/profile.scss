@@ -1,0 +1,45 @@
+.profile-container {
+  border: 1px solid $borderGray;
+  margin: 2em auto;
+  padding: 15px;
+  width: 100%;
+}
+
+.profile-description {
+  width: 70%;
+  margin-top: 15px;
+}
+
+.profile-header {
+  font-size: 1.75em;
+}
+
+.profile-mngmt-container {
+  border: 1px solid $borderGray;
+  background-color: $veryLightGray;
+  margin-top: 15px;
+  padding-bottom: 1em;
+  width: 80%;
+}
+
+.profile-mngmt-header {
+  font-size: 1em;
+  font-weight: bold;
+  color: $naturalBlack;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.profile-mngmt-notice {
+  color: $lightGray;
+  font-size: 0.75em;
+  display: block;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.profile-mngmt-btn-wrapper {
+  margin-top: 1.5em;
+}

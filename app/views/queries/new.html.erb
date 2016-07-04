@@ -1,0 +1,29 @@
+<div class='main-container'>
+  <%= render partial: 'shared/tabs' %>
+
+  <div class="search-container">
+    <div class='ht-form-error-container hidden' id='ht-warning'>
+      <h3 class='ht-warning-header'>
+        Whoops, we can't run your search yet.
+      </h3>
+
+      <p class='ht-explanation-p hidden' id='empty-tags-warning'>
+        To find the best hashtags for your Instagram picture you'll need to provide 3 unique base hashtags.
+      </p>
+
+      <p class='ht-explanation-p hidden' id='illegal-string-tags-warning'>
+        Hashtags are not allowed to have spaces.
+      </p>
+
+      <p class='ht-explanation-p hidden' id='duplicate-tags-warning'>
+        You have duplicates. Remember to use 3 unique hashtags.
+      </p>
+    </div>
+
+    <% if @current_user.can_search? %>
+      <%= render partial: 'form' %>
+    <% else %>
+      <%= render partial: 'upgrade_notice' %>
+    <% end %>
+  </div>
+</div>

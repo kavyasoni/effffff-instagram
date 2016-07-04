@@ -1,0 +1,79 @@
+<div class='main-container'>
+  <div class='processing-container'>
+    <h1 class='processing-header ctr-txt'>
+      Welcome to A Game of Tags
+    </h1>
+
+    <div class='processing-text ctr-txt'>
+      Here's a short tutorial to help you become familiar with our tool.
+    </div>
+
+    <div class='onboarding-container'>
+      <h2 class='user-mngmt-header ctr-txt'>
+        Walkthrough slide <span id='oic-slide'></span> of 3
+      </h2>
+
+      <div class='onboarding-instruction-container' id='oic-1'>
+        <div class='onboarding-instruction-imgcontainer'>
+          <%= image_tag 'tut_1.png', class: 'tut-img' %>
+        </div>
+
+        <div class='onboarding-instruction-subcontainer'>
+          <div class='onboard-instruction-paragraph'>
+            Netflix, Amazon, and iTunes are all examples of companies that recommend titles based on similar titles you've already purchased. Algorithms can only provide relevant results when us humans tell them what to base their searches on.
+          </div>
+
+          <div class='onboard-instruction-paragraph'>
+            Our Instagram filter is no different. It needs that search criteria from you to know what kinds of hashtags to look for.
+          </div>
+
+          <div class='onboard-instruction-paragraph'>
+            To help the filter find these awesome hashtags, you'll need to provide 3 hashtags that will serve as our search criteria. These 3 base hashtags will help fetch the most relevant group of hashtags for you to use with your Instagram image.
+          </div>
+        </div>
+      </div>
+
+      <div class='onboarding-instruction-container hidden' id='oic-2'>
+        <div class='onboarding-instruction-imgcontainer'>
+          <%= image_tag 'tut_2.png', class: 'tut-img' %>
+        </div>
+
+        <div class='onboarding-instruction-subcontainer'>
+          <div class='onboard-instruction-paragraph'>
+            Whenever you search for a group of hashtags our application begins to fetch hashtag data from Instagram. To provide a good batch of results, we need to get enough data. This means for each search, there's a lot of back and forth communicating with Instagram's API and your results won't be available right away.
+          </div>
+        </div>
+      </div>
+
+      <div class='onboarding-instruction-container hidden' id='oic-3'>
+        <div class='onboarding-instruction-imgcontainer'>
+          <%= image_tag 'tut_3.png', class: 'tut-img' %>
+        </div>
+
+        <div class='onboarding-instruction-subcontainer'>
+          <div class='onboard-instruction-paragraph'>
+            But you've got the option to provide us with your email address after starting your search. As soon as your hashtags are ready, we'll email you to let you know.
+          </div>
+
+          <div class='onboard-instruction-paragraph'>
+            That's it, there are next steps. I hope you find A Game of Tags useful.
+          </div>
+        </div>
+      </div>
+
+      <div class='onboarding-nav-btn-wrapper'>
+        <button class='onboarding-nav-btn' id='onboarding-prev'>
+          PREVIOUS
+        </button>
+
+        <button class='onboarding-nav-btn' id='onboarding-next'>
+          NEXT
+        </button>
+
+        <%= form_for @current_user, url: complete_intro_path, method: :post, html: { id: 'oic-form', class: 'oic-form-hidden' } do |f| %>
+          <%= f.submit "LET'S BEGIN!", class: 'profile-mngmt-email-btn', id: 'oic-4'%>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

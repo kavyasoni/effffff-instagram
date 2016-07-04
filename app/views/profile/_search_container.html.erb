@@ -1,0 +1,51 @@
+<div class="profile-search-container">
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Queried hashtags</th>
+        <th>Date searched</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @searches.each_with_index do |query,index| %>
+        <tr class='results-row'>
+          <td>
+            <%= index + 1 %>
+          </td>
+
+          <td>
+            <% query.query_terms.each do |tag| %>
+              <span class="tag">
+                <%= tag %>
+              </span>
+            <% end %>
+          </td>
+
+          <td>
+            <%= query.created_at.strftime('%b %d, %Y') %>
+          </td>
+
+          <% if query.complete? %>
+            <td title="Woohoo! Your search has been completed">
+              <span class="functional-icon icon-check"></span>
+            </td>
+          <% else %>
+            <td title="Our little digital pixies are hard at work optimizing your results">
+              <span class="functional-icon icon-clock-o"></span>
+            </td>
+          <% end %>
+
+          <td>
+            <% if query.complete? %>
+              <%= link_to 'show top hashtags', results_path(query), class: 'hero-cta top-hashtags-btn' %>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

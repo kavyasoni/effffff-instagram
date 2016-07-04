@@ -1,0 +1,100 @@
+.oic-btn-container {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.oic-form {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.oic-form-hidden {
+  display: none;
+}
+
+.onboarding-nav-btn {
+  background-color: $mainBlue;
+  border: none;
+  color: $white;
+  line-height: 1em!important;
+  font-size: 15px!important;
+  font-weight: 400!important;
+  padding: 10px;
+  transition: all 0.1s ease 0s;
+  width: 8em;
+  &:hover {
+    background: #0079CE;
+    cursor: pointer;
+  }
+}
+
+.tut-img {
+  margin: auto;
+  width: 90%;
+}
+
+.onboard-instruction-paragraph {
+  line-height: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+.onboarding-instruction-container {
+  margin: 2em auto 1em;
+  width: 84%;
+}
+
+.onboarding-instruction-subcontainer {
+  display: inline-block;
+  width: 65%;
+}
+
+.onboarding-instruction-imgcontainer {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+.onboarding-container {
+  border: 1px solid $borderGray;
+  background-color: $veryLightGray;
+  margin: 1.5em auto;
+  padding-bottom: 2em;
+  width: 80%;
+}
+
+.onboarding-nav-btn-wrapper {
+  margin: 0.5em auto;
+  text-align: center;
+}
+
+.usr-mngmt-container {
+  border: 1px solid $borderGray;
+  background-color: $veryLightGray;
+  min-height: 100px;
+  margin: 3em auto;
+  width: 60%;
+}
+
+.user-mngmt-header {
+  font-size: 1.25em;
+  color: $naturalBlack;
+  padding: 1em;
+}
+
+.usr-mngmt-notice {
+  clear: both;
+  color: $lightGray;
+  font-size: 0.75em;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  padding-top: 2em;
+  width: 60%;
+}
+
+@media (max-width: 680px) {
+ .usr-mngmt-container, .onboarding-container {
+    margin: 2em auto;
+    width: 90%;
+  }
+}

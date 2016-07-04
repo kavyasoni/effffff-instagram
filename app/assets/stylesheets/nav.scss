@@ -1,0 +1,104 @@
+.nav-container {
+  margin: 0 40px;
+}
+
+.nav-link {
+  background-color: $mainBlue;
+  color: $mainBlue;
+  border-radius: 5px;
+  padding: 8px 12px;
+  text-decoration: none;
+  &:hover {
+    background-color: $mainBlueHover;
+    text-decoration: underline;
+  }
+}
+
+a.nav-link {
+  color: $white;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.nav-link-text, .link-text {
+  vertical-align: middle;
+}
+
+.nav-link-text {
+  padding-top: 2px;
+}
+
+.nav-logo {
+  float: left;
+  margin-top: 1.5em;
+}
+
+.nav-right-list {
+  list-style: none outside none;
+}
+
+.nav-right-list li {
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-top: 2em;
+}
+
+.nav-right-side {
+  float: right;
+}
+
+.top-nav {
+  background-color: $white;
+  border-bottom: 1px solid transparent;
+  height: 80px;
+  margin-bottom: 19px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.top-nav-border {
+  border-bottom: 1px solid $borderGray;
+}
+
+@media (max-width: 680px) {
+  .nav-container {
+    margin: 0 auto;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 0;
+    width: 50%;
+  }
+
+  .nav-logo {
+    float: none;
+    margin: 0 auto;
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  .nav-right-list li {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .nav-right-side {
+    display: block;
+    float: none;
+  }
+
+  .top-nav {
+    border-bottom: 1px solid $borderGray;
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    min-height: 80px;
+    position: relative;
+  }
+}

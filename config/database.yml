@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  pool: 25
+  timeout: 5000
+
+development:
+  <<: *default
+  database: agameoftags_development
+
+test:
+  <<: *default
+  database: agameoftags_test
+
+production:
+  <<: *default
+  database: agameoftags_production

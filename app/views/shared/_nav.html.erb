@@ -1,0 +1,54 @@
+<nav class='top-nav'>
+  <div class='nav-container'>
+    <div class='nav-logo'>
+      <%= link_to root_path do %>
+        <%= image_tag 'logo.png', class: 'agot-logo' %>
+      <% end %>
+
+      <span class='agot-logo-word'>
+        <%= link_to 'A GAME OF TAGS (beta)', root_path %>
+      </span>
+    </div>
+
+    <div class='nav-right-side'>
+      <ul class='nav-right-list'>
+        <% if @current_user && is_admin? %>
+          <li>
+            <%= link_to stats_path, class: 'nav-link' do %>
+              <span class="nav-icon icon-stats"></span>
+              <span class='nav-link-text'>STATS</span>
+            <% end %>
+          </li>
+        <% elsif @current_user %>
+          <li>
+            <%= link_to profile_path, class: 'nav-link' do %>
+              <span class="nav-icon icon-user"></span>
+              <span class='nav-link-text'>PROFILE</span>
+            <% end %>
+          </li>
+        <% end %>
+
+        <li>
+          <a href='pricing.html' class='nav-link'>
+            <span class="nav-icon icon-rss"></span>
+            <span class='nav-link-text'>BLOG</span>
+          </a>
+        </li>
+
+        <li>
+          <% if current_user %>
+            <%= link_to destroy_session_path, method: :delete, class: 'nav-link' do %>
+              <span class="nav-icon icon-sign-out"></span>
+              <span class='nav-link-text'>LOG OUT</span>
+            <% end %>
+          <% else %>
+            <%= link_to '/auth/instagram', class: 'nav-link' do %>
+              <span class="nav-icon icon-sign-in"></span>
+              <span class='nav-link-text'>SIGN IN</span>
+            <% end %>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

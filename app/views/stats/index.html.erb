@@ -1,0 +1,42 @@
+<div class='main-container'>
+  <div class="stats-search-container">
+    <table class="table ">
+      <thead>
+        <tr>
+          <th>Query terms</th>
+          <th>Complete?</th>
+          <th>User</th>
+          <th>Date searched</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @searches.each do |query| %>
+          <tr>
+            <td>
+              <% query.query_terms.each do |tag| %>
+                <span class="tag">
+                  <%= tag %>
+                </span>
+              <% end %>
+            </td>
+
+            <td>
+              <% if query.complete? %>
+                <span class="functional-icon icon-check"></span>
+              <% else %>
+                <span class="functional-icon icon-clock-o"></span>
+              <% end %>
+            </td>
+
+            <td>
+              <%= link_to query.username, "http://www.instagram.com/#{query.username}", target: "_blank" %>
+            </td>
+
+            <td><%= query.created_at.strftime("%e %b %Y") %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

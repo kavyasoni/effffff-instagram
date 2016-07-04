@@ -1,0 +1,33 @@
+<div class='main-container'>
+  <%= render partial: 'shared/breadcrumbs' %>
+
+  <div class="search-results-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class='mobile-hidden'>#</th>
+          <th>Hashtag</th>
+          <th>Number of photos using tag</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @results.each_with_index do |result,index| %>
+          <tr class='results-row'>
+            <td class='mobile-hidden'>
+              <%= index + 1 %>
+            </td>
+
+            <td>
+              <%= result.label %>
+            </td>
+
+            <td>
+              <%= number_with_delimiter result.total_count_on_ig %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

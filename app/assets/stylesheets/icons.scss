@@ -1,0 +1,60 @@
+.benefit-icon-large {
+  margin: auto;
+  width: 150px;
+}
+
+.breadcrumb-icon {
+  margin-right: 3px;
+  font-size: 1em;
+  color: $naturalBlack;
+  cursor: default;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.flash-icon {
+  background-color: $white;
+  border-radius: 50%;
+  margin-right: 0.25em;
+  padding: 4px;
+  vertical-align: middle;
+}
+
+.icon-benefit {
+  color: #8BB750;
+  line-height: 1.5em;
+  margin-right: 0.25em;
+}
+
+.icon-check {
+  color: #2fb133!important;
+}
+
+.nav-icon {
+  color: $naturalBlack;
+  cursor: default;
+  font-size: 1.25em;
+  margin-right: 3px;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+}
+
+.nav-icon:hover {
+  cursor: pointer;
+}
+
+.social-icon, .functional-icon {
+  color: #AAA;
+  cursor: default;
+  font-size: 2em;
+  margin: 0 6px;
+  transition: all 0.3s ease 0s;
+}
+
+.social-icon:hover {
+  color: $white;
+  cursor: pointer;
+}

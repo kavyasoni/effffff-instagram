@@ -1,0 +1,47 @@
+.faq-container {
+  border-bottom: 1px solid $borderGray;
+  border-left: 1px solid $borderGray;
+  border-right: 1px solid $borderGray;
+  margin-bottom: 2em;
+  padding: 0.5em 1.5em;
+  margin-top: -20px;
+}
+
+.terms-container {
+  margin: 7em auto 4em;
+  width: 60%;
+}
+
+.terms-header {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.terms-paragraph {
+  color: $naturalBlack;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 0.95em;
+  margin: 0.75em 0;
+}
+
+.terms-bigger-sub-header {
+  font-size: 2em;
+}
+
+.terms-sub-header, .terms-bigger-sub-header {
+  color: $black;
+  margin: 1.25em 0 0.25em;
+}
+
+@media (max-width: 767px) {
+  .terms-container {
+    margin: 2em auto 1em;
+    width: 90%;
+  }
+
+  .faq-container {
+    margin-top: 0;
+  }
+}
