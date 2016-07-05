@@ -2,7 +2,7 @@ A Game of Tags
 ==============
 I'm releasing the code for an Instagram hashtag finding application that I spent a few months building. I no longer have any use for it because [I have completely quit using Instagram](https://inbound.org/discuss/why-im-forced-to-quit-instagram).
 
-![A Game of Tags]([https://www.filepicker.io/api/file/ALHgFM4TyCmDMDbimsn3])
+![A Game of Tags](https://www.filepicker.io/api/file/ALHgFM4TyCmDMDbimsn3)
 
 Codebase
 ========
