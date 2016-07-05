@@ -2,6 +2,8 @@ A Game of Tags
 ==============
 I'm releasing the code for an Instagram hashtag finding application that I spent a few months building. I no longer have any use for it because [I have completely quit using Instagram](https://inbound.org/discuss/why-im-forced-to-quit-instagram).
 
+![A Game of Tags]([https://www.filepicker.io/api/file/ALHgFM4TyCmDMDbimsn3])
+
 Codebase
 ========
 If you know how to navigate through a rails codebase, this should be fairly straight-forward. I'm pretty sure that to get going, all you need to do is add your IG API keys to `config/initializers/constants.rb` and then:
